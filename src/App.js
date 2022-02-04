@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import {View, Text, StyleSheet} from 'react-native';
-import {SplashScreen} from './pages';
+import {View, StyleSheet} from 'react-native';
+import {SplashScreen, Home} from './pages';
 
 export default class App extends Component {
   constructor(props) {
@@ -11,7 +11,8 @@ export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <SplashScreen />
+        {/* <SplashScreen /> */}
+        <Home />
       </View>
     );
   }
