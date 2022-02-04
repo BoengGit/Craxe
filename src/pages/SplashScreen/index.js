@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import {View, Text} from 'react-native';
+import {View, Text, StyleSheet} from 'react-native';
+import {BowlIcon, HatIcon, Logo} from '../../assets/';
 
 export default class SplashScreen extends Component {
   constructor(props) {
@@ -9,9 +10,24 @@ export default class SplashScreen extends Component {
 
   render() {
     return (
-      <View>
-        <Text> SplashScreen </Text>
+      <View style={styles.container}>
+        <View>
+          <View>
+            <Logo />
+            <Text style={styles.text}>Dining and Delivery Restaurant App</Text>
+          </View>
+        </View>
       </View>
     );
   }
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+  text: {
+    fontSize: 28,
+    fontFamily: 'Poppins-Regular',
+  },
+});
