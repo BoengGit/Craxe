@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {View, Text, StyleSheet} from 'react-native';
-import {BowlIcon, HatIcon, Logo} from '../../assets/';
+import {BowlIcon, HatIcon, Logo} from './assets';
 
 export default class SplashScreen extends Component {
   constructor(props) {
