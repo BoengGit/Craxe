@@ -1,11 +1,17 @@
 import React, {Component} from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 import {BowlIcon, HatIcon, Logo} from './assets';
+import {StackActions} from '@react-navigation/native';
 
 export default class SplashScreen extends Component {
   constructor(props) {
     super(props);
     this.state = {};
+  }
+  componentDidMount() {
+    setTimeout(() => {
+      this.props.navigation.dispatch(StackActions.replace('Home'));
+    }, 2500);
   }
 
   render() {
