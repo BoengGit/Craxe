@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
 import {View, Text, ScrollView, StyleSheet, Image} from 'react-native';
-import {DownArrow, LocationIcon, StartCircle} from './assets';
+import {DownArrow, LocationIcon} from './assets';
 import SearchBar from './SearchBar';
 import Banner from './Banner';
+import MenuPopulars from './MenuPopulars';
 
 export default class Home extends Component {
   constructor(props) {
@@ -31,6 +32,7 @@ export default class Home extends Component {
           </View>
           <SearchBar />
           <Banner />
+          <MenuPopulars />
         </ScrollView>
       </View>
     );
